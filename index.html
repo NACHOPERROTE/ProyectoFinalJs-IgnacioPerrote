@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>COINS TO JUNGLE</title>
+    <script defer src="stock.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body class="juego">
+
+    <header>
+        <nav >
+            <div class="container-fluid numeros">
+                
+                <div class="row">
+
+                <div id="contenedorApuesta" class="contenedor__apuesta">
+
+                <button id="enviarAlCarrito" class="enviarAlCarrito"><p id="contadorDeApuestas" class="contadorDeApuestas">0</p></button>
+
+                </div>  
+
+          </nav>
+    </header>
+    
+    <main>
+
+        <section> 
+
+
+                <div id="validacion" class="row validacion">
+                    
+                    <div id="modal-contenedor" class="modal-contenedor">
+                        <div class="modal-carrito">
+                            <h3>Historial de Jugadas</h3>
+                            <button id="carritoCerrar">X</button>
+                            <div id="carrito-contenedor">
+                                
+
+                            </div>
+                            <p class="precioProducto">Dinero total: $<span id="precioTotal"></span></p>
+                            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+                        </div>
+                    </div>
+
+                    <p class="validacionMonto">Dinero total: $<span id="validacion__monto" class="validacion__monto"></span></p>
+                
+                </div>
+    
+
+
+                <div class="row numeros__fila1">
+
+                    <div class="col-lg-4">
+                        <div class="numeros__titulo">
+                        <h2 class="numeros__titulo--h2">Numero 1</h2>
+                        </div>
+                        <div class="numero">
+                            <span id="item1" class="slot-number">?</span>
+                        </div>
+
+                    
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="numeros__titulo">
+                        <h2 class="numeros__titulo--h2">Numero 2</h2>
+                        </div>
+                        <div class="numero">
+                            <span id="item2" class="slot-number">?</span>      
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="numeros__titulo">
+                        <h2 class="numeros__titulo--h2">Numero 3</h2>
+                        </div>
+                        <div class="numero">
+                            <span id="item3" class="slot-number">?</span>         
+                        </div>
+                    
+                    </div>
+
+            </div>
+
+                    <div class="row numeros__fila2">
+
+                        <div class="numeros__tirar">
+                            <button type="button" id="btnStart" class="btn btn-primary">Tirar</button>
+                        </div>
+
+                        <div id="message" class="numeros__modalCaja">
+                            <div class="numeros__modalContenido">
+                                <h2 class="numeros__modalContenido--h2">Ganaste!</h2>
+                                <img src="./img/win.jfif" alt="imgGanaste" class="numeros__modalContenido--img">
+                                <button id="numeros__cerrarModal" class="btn btn-modal">Cerrar</button>
+                            </div>
+                        </div>
+
+                        <div id="messageDos" class="saldo__modalCaja">
+                            <div class="saldo__modalContenido">
+                                <h2 class="saldo_modalContenido--h1">Saldo Insufisiente</h2>
+                                <img src="./img/gm.jpg" alt="imgGanaste" class="saldo__modalContenido--img">
+                                <button id="saldo__cerrarModal" class="btn btn-modal">Cerrar</button>
+                            </div>
+                        </div>
+            
+                    </div>
+
+        
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        <div id="contenedor">
+            <div id="caja1">
+                <h1 id="temperatura-valor"></h1>
+                <h1 id="temperatura-descripcion"></h1>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
