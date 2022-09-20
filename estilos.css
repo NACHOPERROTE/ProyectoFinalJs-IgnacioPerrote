@@ -495,28 +495,39 @@
 
 
 
-#contenedor {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-}
 
-#caja1, #caja2, #caja3 {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-}
 
-#caja1 {
+#caja1{
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 30px #DF0101; 
+    border: 1px solid #FF0000;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     background-color: rgba(0,0,0,0.767);
-    color:azure;    
+    color: #fff;
+    text-shadow:
+        0 0 5px rgba(0,178,255,1),
+        0 0 10px rgba(0,178,255,1),
+        0 0 20px rgba(0,178,255,1),
+        0 0 40px rgba(38,104,127,1),
+        0 0 80px rgba(38,104,127,1),
+        0 0 90px rgba(38,104,127,1),
+        0 0 100px rgba(38,104,127,1),
+        0 0 140px rgba(38,104,127,1),
+        0 0 180px rgba(38,104,127,1);   
+    width: 10rem;
+    height: 5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
-#caja2 {
-    background-color: darkslateblue;
-    color:azure;    
+
+#temperatura-valor{
+    font-size: 1rem;
 }
-#caja3 {
-    background-color: #2ab2ea;
-    color:azure;    
+
+#temperatura-descripcion{
+    font-size: 1rem;
 }

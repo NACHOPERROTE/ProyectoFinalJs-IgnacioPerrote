@@ -5,11 +5,7 @@
     let temperaturaDescripcion = document.getElementById('temperatura-descripcion')  
     
 
-
-
-  
-
-           const url = `https://api.openweathermap.org/data/2.5/weather?q=Argentina&lang=es&units=metric&appid=${'2523344182137c2b49ba04ba27348f17'}`
+           const url = `https://api.openweathermap.org/data/2.5/weather?q=Liniers&lang=es&units=metric&appid=${'2523344182137c2b49ba04ba27348f17'}`
 
 
            fetch(url)
